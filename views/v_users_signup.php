@@ -1,29 +1,23 @@
 <h2>Sign up</h2>
 
-<form method='POST' action='/users/p_signup'>
+<form action="/users/p_signup" method="POST">
+    <p>
+    First Name (4 characters minimum):
+    <input type='text' name="first_name" data-validation="length" data-validation-length="min4">
+    </p>
+    <p>
+    Last Name (4 characters minimum):
+    <input type='text' name="last_name" data-validation="length" data-validation-length="min4">
+    </p>
+    <p>
+    Email:
+    <input type='text' name="email" data-validation="email">
+    </p>
+    <p>
+    Password (4 characters minimum):
+    <input type='password' name="password" data-validation="length" data-validation-length="min4">
+    </p>
 
-    First Name<br>
-    <input type='text' name='first_name'>
-    <br><br>
-
-    Last Name<br>
-    <input type='text' name='last_name'>
-    <br><br>
-
-    Email<br>
-    <input type='text' name='email'>
-    <br><br>
-
-    Password<br>
-    <input type='password' name='password'>
-    <br><br>
-
-    <?php if(isset($error) && $error == 'blank-fields'): ?>
-        <div class='error'>
-            Signup Failed. All fields are required.
-        </div>
-        <br>
-    <?php endif; ?>
 
     <?php if(isset($error) && $error == 'email-exists'): ?>
         <div class='error'>
@@ -33,5 +27,8 @@
     <?php endif; ?>
 
     <input type='submit' value='Sign up'>
-
 </form>
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.27/jquery.form-validator.min.js"></script>
+<script> $.validate(); </script>
