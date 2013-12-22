@@ -14,11 +14,11 @@ If you want a different default time format for this app, set it below
 */
 
 # What is the name of this app?
-	define('APP_NAME', 'Ready Set Blog');  
+	define('APP_NAME', 'Goal Friender');  
 
 # When email is sent out from the server, where should it come from?
 # Ideally, this should match the domain name
-	define('APP_EMAIL', 'admin.readysetblog@feddeready.com'); 
+	define('APP_EMAIL', 'admin.henneberger@g.harvard.com'); 
 
 /* 
 A email designated to receive messages from the server. Examples:
@@ -31,16 +31,16 @@ A email designated to receive messages from the server. Examples:
 	define('SYSTEM_EMAIL', 'henneberger@g.harvard.edu'); 
 
 # Default DB name for this app
-	define('DB_NAME', "fedderea_p2_feddeready_com"); 
+	define('DB_NAME', "fedderea_p4_feddeready_com"); 
 
 # Timezone
 	define('TIMEZONE', 'America/New_York');
 
 # If your app is going to have outgoing emails, you should fill in your SMTP settings
 # For this you could use gmail SMTP or something like http://sendgrid.com/
-	define('SMTP_HOST', 'smtp.sendgrid.net');
-	define('SMTP_USERNAME', 'kevinhenneberger');
-	define('SMTP_PASSWORD', 'readysetblog!');
+	//define('SMTP_HOST', '');
+	//define('SMTP_USERNAME', '');
+	//define('SMTP_PASSWORD', '');
 
 # For extra security, you might want to set different salts than what the core uses
 	define('PASSWORD_SALT', 'u8p7avQkkemv3N7RqCTSFJ1_bE@V)tFoOd6aLb^y');
